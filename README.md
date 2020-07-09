@@ -2,7 +2,7 @@
 
 **Name of your app** is a tip calculator application for iOS.
 
-Submitted by: **Your Name Here**
+Submitted by: Yihui Liao
 
 Time spent: **X** hours spent in total
 
