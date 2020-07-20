@@ -24,15 +24,18 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var splitLabel: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
+    @IBOutlet weak var each: UILabel!
+    
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         billField.becomeFirstResponder()
         
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
     }
     
     //If the user taps off the text field, the keyboard will close

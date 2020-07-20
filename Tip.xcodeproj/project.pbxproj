@@ -15,6 +15,7 @@
 		8F120BD324B7BFD700E60B98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F120BD124B7BFD700E60B98 /* LaunchScreen.storyboard */; };
 		8F120BDE24B7BFD700E60B98 /* TipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F120BDD24B7BFD700E60B98 /* TipTests.swift */; };
 		8F120BE924B7BFD800E60B98 /* TipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F120BE824B7BFD800E60B98 /* TipUITests.swift */; };
+		8F8555D424C51B1A007DFB3F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8555D324C51B1A007DFB3F /* SettingsViewController.swift */; };
 		8F87F01824B9109C00080E6B /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F87F01724B9109C00080E6B /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		8F120BE424B7BFD800E60B98 /* TipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F120BE824B7BFD800E60B98 /* TipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipUITests.swift; sourceTree = "<group>"; };
 		8F120BEA24B7BFD800E60B98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F8555D324C51B1A007DFB3F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		8F87F01724B9109C00080E6B /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 				8F120BC624B7BFD700E60B98 /* AppDelegate.swift */,
 				8F120BC824B7BFD700E60B98 /* SceneDelegate.swift */,
 				8F120BCA24B7BFD700E60B98 /* ViewController.swift */,
+				8F8555D324C51B1A007DFB3F /* SettingsViewController.swift */,
 				8F120BCC24B7BFD700E60B98 /* Main.storyboard */,
 				8F120BCF24B7BFD700E60B98 /* Assets.xcassets */,
 				8F120BD124B7BFD700E60B98 /* LaunchScreen.storyboard */,
@@ -266,6 +269,7 @@
 				8F120BCB24B7BFD700E60B98 /* ViewController.swift in Sources */,
 				8F120BC724B7BFD700E60B98 /* AppDelegate.swift in Sources */,
 				8F120BC924B7BFD700E60B98 /* SceneDelegate.swift in Sources */,
+				8F8555D424C51B1A007DFB3F /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
