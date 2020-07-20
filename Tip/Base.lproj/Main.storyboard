@@ -160,14 +160,9 @@
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" title="Tip Calculator" id="K6T-dv-PO5">
-                        <barButtonItem key="rightBarButtonItem" title="Settings" style="plain" id="e2O-Mq-4WW">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d0q-4U-rNa">
-                                <rect key="frame" x="337" y="7" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Settings"/>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="p14-5w-d7l">
                             <connections>
-                                <segue destination="ohA-CK-Ucm" kind="push" id="uQ5-ob-fGb"/>
+                                <segue destination="ohA-CK-Ucm" kind="push" id="93D-uL-MhU"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -197,6 +192,15 @@
                     <view key="view" contentMode="scaleToFill" id="iwP-5I-4Zr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uY2-DJ-jIO">
+                                <rect key="frame" x="174" y="128" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="DIm-5A-UJU"/>
                     </view>
