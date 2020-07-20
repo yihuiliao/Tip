@@ -52,6 +52,7 @@
                                 </segments>
                                 <connections>
                                     <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="4xR-zk-7Fb"/>
+                                    <action selector="setTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="bLd-Qd-35W"/>
                                 </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwu-S0-6xw">
@@ -188,27 +189,42 @@
         <!--Settings View Controller-->
         <scene sceneID="B8K-Ls-GKK">
             <objects>
-                <viewController id="ohA-CK-Ucm" customClass="SettingsViewController" sceneMemberID="viewController">
+                <viewController id="ohA-CK-Ucm" customClass="SettingsViewController" customModule="Tip" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iwP-5I-4Zr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uY2-DJ-jIO">
-                                <rect key="frame" x="174" y="128" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Default Tip Percentage: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uY2-DJ-jIO">
+                                <rect key="frame" x="20" y="126" width="185" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="okR-zT-HHm">
+                                <rect key="frame" x="20" y="171" width="374" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="15%"/>
+                                    <segment title="18%"/>
+                                    <segment title="20%"/>
+                                </segments>
+                                <connections>
+                                    <action selector="setDefault:" destination="ohA-CK-Ucm" eventType="valueChanged" id="U2I-iQ-3lA"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="DIm-5A-UJU"/>
                     </view>
                     <navigationItem key="navigationItem" id="5VW-q0-tvy"/>
+                    <connections>
+                        <outlet property="defaultTipControl" destination="okR-zT-HHm" id="GHH-Rr-M9d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XLC-8a-vfL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2004" y="135"/>
+            <point key="canvasLocation" x="2002.8985507246377" y="134.59821428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Utn-pe-1bw">

@@ -30,6 +30,9 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         billField.becomeFirstResponder()
+        let defaults = UserDefaults.standard
+
+        tipControl.selectedSegmentIndex = defaults.integer(forKey: "myInt")
         
     }
 
@@ -43,7 +46,6 @@ class ViewController: UIViewController {
         view.endEditing(true)
     }
     
-  
     @IBAction func calculateTip(_ sender: Any) {
 
         let bill = Double(billField.text!) ?? 0
