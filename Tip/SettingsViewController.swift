@@ -16,6 +16,7 @@ class SettingsViewController: UIViewController{
         let defaults = UserDefaults.standard
 
         defaultTipControl.selectedSegmentIndex = defaults.integer(forKey: "myInt")
+        
     }
     
     @IBAction func  setDefault(_ sender: Any){
@@ -26,9 +27,7 @@ class SettingsViewController: UIViewController{
         defaults.set(index, forKey: "myInt")
 
         defaults.synchronize();
-        
-        print("hey")
-        
+                
     }
     
 //    let defaults = UserDefaults.standard

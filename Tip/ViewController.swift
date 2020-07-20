@@ -27,12 +27,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var each: UILabel!
     
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        billField.becomeFirstResponder()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         let defaults = UserDefaults.standard
 
         tipControl.selectedSegmentIndex = defaults.integer(forKey: "myInt")
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        billField.becomeFirstResponder()
         
     }
 
@@ -57,7 +62,7 @@ class ViewController: UIViewController {
         
         let total = bill + tip
         
-        let split = (bill + tip)/splitPeople[splitControl.selectedSegmentIndex]
+        let split = (total)/(splitPeople[splitControl.selectedSegmentIndex])
 
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
